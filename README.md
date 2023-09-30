@@ -1,1 +1,1 @@
-This project consists of domain analysis across multiple countries in the S&P500.
+This project consists of domain analysis across multiple companies in the S&P500.
