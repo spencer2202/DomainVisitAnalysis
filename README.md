@@ -1,1 +1,1 @@
-This project consists of mobile and desktop analysis of visits to multiple domain sites.
+This project consists of domain analysis across multiple countries in the S&P500.
