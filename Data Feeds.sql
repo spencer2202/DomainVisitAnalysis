@@ -41,10 +41,13 @@ FROM "DATAFEEDS"."SP_500"
 GROUP BY company_name
 ORDER BY company_name asc
 
-CTE
+--CTE
 
 WITH cell_visits 
-AS (SELECT * FROM "DATAFEEDS"."SP_500" WHERE mobile_visits <= 100)
-SELECT company_name, ticker, mobile_visits FROM cell_visits
+AS (
+  SELECT * FROM "DATAFEEDS"."SP_500" WHERE mobile_visits <= 100
+)
+SELECT company_name, ticker, mobile_visits 
+FROM cell_visits
 GROUP BY company_name, ticker, mobile_visits
 ORDER BY company_name ASC
